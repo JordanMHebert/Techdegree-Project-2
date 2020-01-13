@@ -1,0 +1,284 @@
+/*=======================================
+         base styles
+======================================== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Varela Round', sans-serif;
+  line-height: 1.6;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+/*=======================================
+        layout styles
+======================================== */
+/* ----main-header----*/
+.name {
+  text-align: center;
+  padding-top: 12px;
+  margin: 0;
+  font-family: 'Gayathri', sans-serif;
+  color: grey;
+}
+
+/*---- navigation menu ----*/
+.main-header {
+  background: #fafafa;
+}
+
+.main-nav a,
+.main-nav li {
+  background: white;
+  color: black;
+  margin-top: 5px;
+  padding-top: .2px;
+  padding-bottom: 3px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: block;
+}
+
+/* ---- main styles ---- */
+.profile-picture {
+  margin-top: 40px;
+  max-width: 70%;
+}
+
+h2 {
+  margin-bottom: 0;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+.hi-there {
+  padding-bottom: 40px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.portfolio-title {
+  margin-bottom: 30px;
+}
+
+/* ---- container styles */
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+/* ---- footer styles ---- */
+.footer {
+  padding-top: 30px;
+  text-align: center;
+  background: #fafafa;
+}
+
+.footer-div {
+  background: #fafafa;
+  margin-top: 50px;
+  border-top: .6px solid grey;
+}
+
+.student-name {
+  float: left;
+  margin-left: 10px;
+}
+
+.to-top {
+  float: right;
+  margin-right: 10px;
+}
+
+.to-top a {
+  color: black;
+}
+
+.seconday-nav {
+  visibility: hidden;
+}
+
+/*=======================================
+            media queries
+ ======================================== */
+@media (min-width:768px),
+only screen and (min-width: 700px) and (orientation: landscape) {
+  .wrap {
+    min-height: calc(100vh - 342.03px)
+  }
+
+  .footer {
+    clear: both;
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .chat {
+    max-width: 60%;
+    margin-left: 180px;
+  }
+
+  .student-name {
+    margin-top: 20px;
+    margin-left: 15px;
+  }
+
+  .seconday-nav {
+    visibility: visible;
+    float: right;
+    margin-right: 15px;
+  }
+
+  .seconday-nav li {
+    display: inline-block;
+    background-color: #fafafa;
+    padding: 2px 5px;
+    margin-top: 20px;
+  }
+
+  .seconday-nav a {
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .to-top {
+    visibility: hidden;
+    float: left;
+  }
+
+  .name {
+    padding-top: 40px;
+    font-family: 'Gayathri', sans-serif;
+  }
+
+  .main-nav li {
+    display: inline-block;
+    background-color: #fafafa;
+    margin-left: 20px;
+  }
+
+  a:link {
+    text-decoration: none;
+  }
+
+  .main-nav a,
+  .main-nav {
+    background: #fafafa;
+    color: black;
+    margin-top: 5px;
+    padding-top: .2px;
+    padding-bottom: 3px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .profile-picture {
+    max-width: 32%;
+    float: right;
+    margin-top: 0;
+    margin-right: 15px;
+    margin-bottom: 40px;
+  }
+
+  .hi-there {
+    width: 63%;
+    margin-left: 12px;
+    text-align: left;
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  .marketing-page,
+  .travel-page,
+  .photo-gallery {
+    max-width: 49%;
+    float: left;
+  }
+
+  .search-page,
+  .map-of-favorite-spots,
+  .calculator {
+    max-width: 49%;
+    float: right;
+  }
+
+  /*---- float clearfix ----*/
+  .clearfix::after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+
+  @media (min-width:1024px) {
+
+    .hi-there,
+    .profile-picture {
+      /* padding-top: 120px; */
+      clear: both;
+    }
+
+    .hi-there {
+      margin-top: -200px;
+      float: left;
+      font-size: 1.1em;
+    }
+
+    .profile-picture {
+      margin-right: 20px;
+    }
+
+    .name {
+      float: left;
+    }
+
+    .main-nav,
+    .main-nav a {
+      float: right;
+      padding-top: 15px;
+    }
+
+    .marketing-page {
+      max-width: 31.33%;
+      margin-left: 10px;
+    }
+
+    .search-page,
+    .photo-gallery {
+      max-width: 31.33%;
+      float: left;
+      margin-left: 20px;
+      margin-right: 5px;
+    }
+
+    .travel-page,
+    .calculator {
+      max-width: 31.33%;
+      float: right;
+      margin-right: 10px;
+    }
+
+    .map-of-favorite-spots {
+      max-width: 31.33%;
+      margin-left: 10px;
+      float: left;
+    }
+
+    .chat {
+      max-width: 45%;
+      margin-left: 280px;
+      padding-top: 10px;
+      padding-bottom: 5px;
+    }
+  }
+}
