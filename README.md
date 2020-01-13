@@ -1,2 +1,2 @@
 # Techdegree Project 2
- My 2nd Techdegree project
+ Jordan Hebert's Techdegree Project 2
