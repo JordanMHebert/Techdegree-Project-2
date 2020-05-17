@@ -346,3 +346,95 @@ footer .copyright {
     }
   }
 }
+
+@media (min-width:1920px) {
+
+  .hi-there,
+  .profile-picture {
+    /* padding-top: 120px; */
+    clear: both;
+  }
+
+  .hi-there {
+    margin-top: -200px;
+    float: left;
+    font-size: 1.1em;
+  }
+
+  .profile-picture {
+    margin-right: 20px;
+  }
+
+  .name {
+    float: left;
+  }
+
+  .main-nav,
+  .main-nav a {
+    float: right;
+    padding-top: 15px;
+  }
+
+  .marketing-page {
+    max-width: 31.33%;
+    margin-left: 10px;
+  }
+
+  .search-page,
+  .photo-gallery {
+    max-width: 31.33%;
+    float: left;
+    margin-left: 20px;
+    margin-right: 5px;
+  }
+
+  .travel-page,
+  .calculator {
+    max-width: 31.33%;
+    float: right;
+    margin-right: 10px;
+  }
+
+  .map-of-favorite-spots {
+    max-width: 31.33%;
+    margin-left: 10px;
+    float: left;
+  }
+
+  .seconday-nav {
+    /* visibility: hidden; */
+    margin-top: -6em;
+  }
+
+.jordanFooter{
+  margin-left: 20em;
+}
+
+  .twitter,
+  .linkedin,
+  .github,
+  .facebook{
+    max-width: 2.8em;
+    margin: auto;
+    width: 50%;
+    padding: .3em;
+  }
+
+  footer .copyright {
+    margin-top: -.3em;
+    margin-right: 1.25em;
+    margin-left: 20em;
+    font-size: 1em;
+    font-style: italic;
+    color: #0198E1;
+    margin-bottom: -.5em;
+  }
+
+  .chat {
+    max-width: 45%;
+    margin-left: 280px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+  }
+}
+}
