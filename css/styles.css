@@ -431,8 +431,8 @@ footer .copyright {
   }
 
   .chat {
-    max-width: 45%;
-    margin-left: 280px;
+    max-width: 50%;
+    margin-left: 32em;
     padding-top: 10px;
     padding-bottom: 5px;
   }
